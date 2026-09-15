@@ -174,9 +174,7 @@
 }
 
 .assessment-matrix thead th {
-  position: sticky;
-  top: 83px;
-  z-index: 2;
+  position: static;
   color: #fff;
   background: var(--green);
   font-size: 12px;
@@ -246,7 +244,4 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .assessment-matrix thead th {
-    top: 69px;
-  }
 }
