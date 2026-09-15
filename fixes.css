@@ -98,3 +98,155 @@
   overflow-wrap: break-word;
   word-break: normal;
 }
+
+#quizForm legend b {
+  flex: 1;
+}
+
+#quizForm legend em {
+  padding: 4px 8px;
+  color: #fff;
+  background: var(--green);
+  border-radius: 99px;
+  font: 800 11px/1 Arial, sans-serif;
+  letter-spacing: .08em;
+}
+
+.assessment-matrix {
+  padding: 80px 6vw 100px;
+  background: var(--paper);
+}
+
+.matrix-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 28px;
+  margin-bottom: 26px;
+}
+
+.matrix-head h2 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font: 400 clamp(34px, 4vw, 56px)/1.05 Cambria, "Times New Roman", serif;
+}
+
+.matrix-head p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.matrix-legend {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.matrix-legend span {
+  padding: 11px 13px;
+  background: #eef4dc;
+  color: var(--green);
+  font-size: 12px;
+}
+
+.matrix-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+}
+
+.assessment-matrix table {
+  width: 100%;
+  min-width: 1120px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.assessment-matrix th,
+.assessment-matrix td {
+  padding: 15px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.assessment-matrix thead th {
+  position: sticky;
+  top: 83px;
+  z-index: 2;
+  color: #fff;
+  background: var(--green);
+  font-size: 12px;
+}
+
+.assessment-matrix tbody th {
+  width: 220px;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.assessment-matrix tbody th span,
+.assessment-matrix td b,
+.assessment-matrix td span {
+  display: block;
+}
+
+.assessment-matrix tbody th span {
+  margin-bottom: 5px;
+  color: var(--green);
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.assessment-matrix td b {
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 10px;
+  letter-spacing: .07em;
+}
+
+.assessment-matrix td span {
+  color: #3f4944;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.assessment-matrix tbody tr:nth-child(even) {
+  background: #faf9f4;
+}
+
+@media (max-width: 700px) {
+  #quizForm legend {
+    flex-wrap: wrap;
+  }
+
+  #quizForm legend b {
+    flex-basis: calc(100% - 44px);
+  }
+
+  #quizForm legend em {
+    margin-left: 42px;
+  }
+
+  .assessment-matrix {
+    padding: 60px 5vw 75px;
+  }
+
+  .matrix-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .matrix-legend {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .assessment-matrix thead th {
+    top: 69px;
+  }
+}
