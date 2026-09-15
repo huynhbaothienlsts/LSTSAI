@@ -70,3 +70,31 @@
     font-size: 16px;
   }
 }
+
+/* Georgia can misplace Vietnamese diacritics on some Windows/browser builds. */
+.hero h1,
+.section-head h2,
+.assessment h2,
+.grade-summary h3,
+.lesson-grid h4,
+.planner aside h2,
+.plan-title h2,
+.study-grid article h3,
+.challenge > h3,
+.quiz-head h3,
+.tm-lab h3,
+.number,
+.rubric em {
+  font-family: Cambria, "Times New Roman", serif;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  letter-spacing: normal;
+}
+
+.lesson-grid h4,
+.plan-title h2,
+.section-head h2,
+.assessment h2 {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
