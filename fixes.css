@@ -3,3 +3,70 @@
 .access-note{background:#fff;color:var(--ink);padding:14px 16px;font-size:12px;line-height:1.55;border-left:4px solid var(--lime)}
 .rubric span{font-weight:800;color:var(--green)}
 @media(max-width:600px){.standard-strip{align-items:flex-start;flex-direction:column}}
+
+/* Quiz question cards: keep headings readable against the dark lesson panel. */
+#quizForm {
+  gap: 18px;
+}
+
+#quizForm fieldset {
+  margin: 0;
+  padding: 18px 26px 26px;
+}
+
+#quizForm legend {
+  float: left;
+  width: 100%;
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #103c2e;
+  background: #e8f5b8;
+  border-left: 5px solid var(--lime);
+  border-radius: 4px;
+  font: 700 18px/1.45 Arial, "Segoe UI", sans-serif;
+}
+
+#quizForm legend + label {
+  clear: both;
+}
+
+#quizForm legend span {
+  width: 30px;
+  height: 30px;
+}
+
+#quizForm label {
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 3px;
+}
+
+#quizForm label:hover {
+  border-color: #9ebc77;
+}
+
+#quizForm label:has(input:checked) {
+  color: #103c2e;
+  background: #eef6cf;
+  border-color: var(--green);
+}
+
+#quizForm input {
+  width: 17px;
+  height: 17px;
+  flex: none;
+}
+
+@media (max-width: 600px) {
+  #quizForm fieldset {
+    padding: 12px 14px 18px;
+  }
+
+  #quizForm legend {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
