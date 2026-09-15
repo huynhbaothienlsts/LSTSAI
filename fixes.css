@@ -1,0 +1,5 @@
+.framework-source{max-width:590px;color:var(--muted);line-height:1.6}
+.standard-strip{display:flex;justify-content:space-between;gap:18px;background:var(--lime);color:var(--green);padding:13px 16px;margin-bottom:16px;font-size:12px}
+.access-note{background:#fff;color:var(--ink);padding:14px 16px;font-size:12px;line-height:1.55;border-left:4px solid var(--lime)}
+.rubric span{font-weight:800;color:var(--green)}
+@media(max-width:600px){.standard-strip{align-items:flex-start;flex-direction:column}}
